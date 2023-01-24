@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal Match", "Animal Match\Animal Match.csproj", "{FC907233-0E63-49D3-AB83-4B4FDF8CCEA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC907233-0E63-49D3-AB83-4B4FDF8CCEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC907233-0E63-49D3-AB83-4B4FDF8CCEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC907233-0E63-49D3-AB83-4B4FDF8CCEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC907233-0E63-49D3-AB83-4B4FDF8CCEA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F086EC7F-E683-45FB-B0C8-723B51514B8B}
+	EndGlobalSection
+EndGlobal
