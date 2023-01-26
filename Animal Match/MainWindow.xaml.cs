@@ -35,6 +35,7 @@ namespace Animal_Match
             SetUpGame();
 
         }
+        //this code just makes the timer go up every .1 seconds//
 
         private void Timer_Tick(object sender, EventArgs e)
         {
@@ -45,6 +46,7 @@ namespace Animal_Match
                 timer.Stop();
                 timeTextBlock.Text = timeTextBlock.Text + " - Play Again?";
             }
+            //this code makes a timer start and stop when all 8 matches are found and then makes a button to play again//
         }
         private void TimeTextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -52,6 +54,7 @@ namespace Animal_Match
             {
                 SetUpGame();
             }
+            // this just makes the game start back up if all 8 matches are found and the reset game button is clicked//
         }
         private void SetUpGame()
         {
@@ -66,18 +69,21 @@ namespace Animal_Match
                 "🦝","🦝",
                 "🐐","🐐",
             };
+            //this creates 8 pairs of random emojis//
             Random random = new Random();
 
             foreach (TextBlock textblock in mainGrid.Children.OfType<TextBlock>())
             {
                 if (textblock.Name != "timeTextBlock")
                 {
+                    textblock.Visibility = Visibility.Visible;
                     int index = random.Next(animalEmoji.Count);
                     string nextEmoji = animalEmoji[index];
                     textblock.Text = nextEmoji;
                     animalEmoji.RemoveAt(index);
                 }
             }
+            //this will replace the text block text with a emoji//
             timer.Start();
             tenthsOfSecondsElapsed = 0;
             matchesFound = 0;
@@ -106,5 +112,6 @@ namespace Animal_Match
                 findingMatch = false;
             }
         }
+        
     }
 }
